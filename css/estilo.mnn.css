@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+    background-color: white;
+}
+p{
+    margin-bottom: 1.6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    color: #333;
+}
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto ;
+    text-align: center;
+}
+h1{ 
+    font-size: 2rem;
+    line-height: 1.3em;
+    text-align: center;
+    width:85%;
+    max-width: 850px;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+}
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    width: 100%;
+}
+#content-footer{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+#p-footer{
+    text-align: center;
+    width: 100%;
+    max-height: 3.5rem;
+}
+.logo {
+    max-width: 5rem;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    body {
+        font-size: 75%;
+    }
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+    .cerrar-menu {
+        color: #ececec;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        overflow: hidden;
+    }
+    .nav-list {
+        flex-direction:column;
+        align-items: end;
+        overflow-y:hidden;
+    }
+    .nav-list li a {
+        color: #ecececec;
+    }
+    main{
+        text-align: center;
+    }
+    button{
+        .pulse-effect:hover {
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #007bff; /* Color base del botón */
+            transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
+          }
+          .pulse-effect:hover {
+            background-color: #0056b3; /* Cambia el color al pasar el cursor sobre el botón */
+          }
+          .pulse-effect:active {
+            transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+          }
+    }
+    }
